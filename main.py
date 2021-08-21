@@ -10,17 +10,13 @@ from selenium.webdriver.common.by import By
 
 class ADarkRoom:
     def __init__(self):
-        self.driver = webdriver.Chrome()
-        self.driver.get("http://adarkroom.doublespeakgames.com/?lang=zh_cn")
-        # 等待第一个事件出现
-        WebDriverWait(self.driver, 60).until(ec.visibility_of_element_located((By.ID, "event")))
-
-    def get_event_title(self):
-        """
-        获取事件标题
-        :return: 事件标题文本
-        """
-        return self.driver.find_element_by_class_name("eventTitle").text
+        self.driver = webdriver.Chrome()  # 实例化一个浏览器对象
+        # self.driver.get("http://adarkroom.doublespeakgames.com/?lang=zh_cn")  # 加载到小黑屋
+        self.driver.get('file:///D:/MyDatabase/Code/JavaScript/adarkroom/index.html?lang=zh_cn')  # 加载到小黑屋
+        WebDriverWait(self.driver, 60).until(ec.visibility_of_element_located((By.ID, "event")))  # 等待第一个事件出现
+        self.click_button("lightButton")  # 生火-游戏开始
+        self.click_ele(By.CSS_SELECTOR, ".hyper")  # 加速
+        self.click_ele(By.CSS_SELECTOR, ".hyper")  # 二次点击 一次点击会失效 可能是由于需要先聚焦
 
     def click_button_id(self, ele_id):
         """
