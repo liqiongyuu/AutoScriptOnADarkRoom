@@ -62,7 +62,18 @@ class ADarkRoom:
         :return: 按钮可点击就返回按钮，不能就返回False
         """
         try:
-            title = self.get_event_title()
+            button = driver.find_element_by_id(button_id)  # 获取按钮定位
+            button_class = button.get_attribute("class")
+            if button_class == "button disable" or button_class == "button free disabled":  # 按钮的class值有disable就无法点击
+                return False
+            else:
+                return button
+        except NoSuchElementException:  # 找不到按钮报错
+            print("Button not found！")
+
+    def handling_events(self):
+        if self.is_exist(By.CLASS_NAME, "eventTitle"):
+            title = self.driver.find_element_by_class_name("eventTitle").text  # 获取事件标题
             print(title)
             if title == "Sound Available!":
                 self.click_button_id("no")
