@@ -91,30 +91,127 @@ class ADarkRoom:
             elif title == "损毁的陷阱":
                 self.click_button_id("track")
                 self.click_button_id("end")
-            elif title == "神秘流浪者":
+            elif title in ["神秘流浪者", "乞丐"]:
                 self.click_button_id("deny")
             elif title == "火灾":
                 self.click_button_id("mourn")
             elif title == "患病男子":
                 self.click_button_id("ignore")
-        except:
-            pass
+            elif title == "要加速么？":
+                self.click_button_id("yes")
+            else:
+                print("Accident {0}!".format(title))
 
-        self.click_button_id(ele_id)
+    def is_exist(self, by, value=None):
+        """
+        判断元素是否存在
+        is_exist(By.CLASS_NAME, "eventTitle")
+        :param by: By.ID By.CLASS_NAME
+        :param value: 对应的值
+        :return: 存在返回True 不存在返回False
+        """
+        try:
+            self.driver.find_element(by, value)
+            return True
+        except NoSuchElementException:  # 没找到按钮就返回False
+            return False
+
+    def not_enough(self, button_id):
+        """
+        判断现有材料数够不都需求数
+        :param button_id: 按钮id
+        :return: 所有材料都不够返回对应的id
+        """
+        resource_name_id = {  # 资源表还不完善
+            "木头": "row_wood",
+            "毛皮": "row_fur"
+        }
+        demand = self.get_button_tip(button_id)
+        for key, value in demand.items():
+            resource_val = self.get_resource_val(resource_name_id[key])
+            if value > resource_val:  # 现有材料数是否小于需求值
+                return resource_name_id[key]  # 返回不足的id并停止循环节省时间开销
+
+    def click_page(self, button_id):
+        """
+        点击按钮时切换到对应的页面
+        :param button_id: 按钮id
+        """
+        button_page = {
+            "lightButton": "location_room",
+            "stokeButton": "location_room",
+            "build_cart": "location_room",
+            "build_trap": "location_room",
+            "build_hut": "location_room",
+            "gatherButton": "location_outside",
+            "trapsButton": "location_outside"
+        }
+        if not self.driver.find_element_by_id(button_page[button_id]).is_selected():
+            self.driver.find_element_by_id(button_page[button_id]).click()
+            sleep(1)  # 需要等待动画结束
+
+    def find_ele(self, by, value):
+        """
+        显示等待，定位元素
+        :param by: By.ID
+        :param value: "location_room"
+        :return: WebElement 页面元素
+        """
+        return WebDriverWait(self.driver, 10).until(lambda x: x.find_element(by, value))
+
+    def get_resource_val(self, resource_id):
+        """
+        获取右侧库存id对应材料的材料数
+        :param resource_id: 材料对应的id值
+        :return: 材料数的整数类型
+        """
+        try:
+            val = self.driver.find_element_by_css_selector("#{0} > .row_val".format(resource_id)).get_attribute("textContent")
+            return int(val)
+        except NoSuchElementException:
+            return 5  # 前期未找到是因为没有显示出来，设置为5不影响前期点击按钮
+
+    def get_button_tip(self, button_id):
+        """
+        获取按钮提示对应需求的材料名和材料数
+        :param button_id: 按钮id
+        :return: 字典 例如：{"木头": 200, "毛皮": 10, "肉": 5}
+        """
+        tips_key = self.driver.find_elements_by_css_selector("#{0} > .tooltip.bottom.right > .row_key".format(button_id))
+        tips_val = self.driver.find_elements_by_css_selector("#{0} > .tooltip.bottom.right > .row_val".format(button_id))
+        keys = []
+        values = []
+        for key in tips_key:
+            keys.append(key.get_attribute("textContent"))
+        for val in tips_val:
+            values.append(int(val.get_attribute("textContent")))
+
+        return dict(zip(keys, values))
 
     def go(self):
-        self.click_button("lightButton")
-        self.click_button("stokeButton")
-        self.click_button("stokeButton")
-        self.click_button("stokeButton")
-        self.click_button("stokeButton")
-        self.click_button("stokeButton")
-        self.click_button("stokeButton")
-        self.click_button("gatherButton")
-        self.click_button("build_trap")
+        while not self.is_exist(By.ID, "location_outside"):  # 等待静谧森林出现
+            self.click_button("stokeButton")
+        while not self.is_exist(By.ID, "build_cart"):  # 等待货车出现
+            self.click_button("gatherButton")
+            self.click_button("stokeButton")  # 在生火间里才会出建造货车的事件
+        while self.get_resource_val("row_wood") < 30:
+            self.click_button("gatherButton")
         self.click_button("build_cart")
-        self.click_button("trapsButton")
-        self.click_button("build_hut")
+        while self.get_resource_val("row_wood") < self.get_resource_val("building_row_trap") * 10:
+            self.click_button("gatherButton")
+        self.click_button("build_trap")
+        sleep(20)
+        self.driver.quit()
+        # self.click_button("trapsButton")
+        # self.click_button("build_hut")
+        # self.driver.find_element(by, value).click()
+        # ActionChains(self.driver).click_and_hold(self.driver.find_element(by, value)).release().perform()
+        # ActionChains(self.driver).release(self.driver.find_element(by, value)).perform()
+        # if self.driver.find_element_by_id(button_id).get_attribute("buildthing"):
+        #     print(self.driver.find_element_by_id(button_id).get_attribute("buildthing"))
+        #     self.click_ele(By.ID, button_id)
+        #     self.click_ele(By.ID, button_id)
+        # else:
 
 
 if __name__ == '__main__':
