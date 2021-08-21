@@ -3,9 +3,11 @@
 from time import sleep
 
 from selenium import webdriver
+from selenium.webdriver import ActionChains
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.common.by import By
+from selenium.common.exceptions import NoSuchElementException, ElementClickInterceptedException
 
 
 class ADarkRoom:
@@ -79,7 +81,10 @@ class ADarkRoom:
                 self.click_button_id("no")
             elif title == "Penrose":
                 self.click_button_id("give in")
-                self.driver.close()
+                windows = self.driver.window_handles  # 获取当前所有页面句柄
+                self.driver.switch_to.window(windows[1])  # 切换当新页面
+                self.driver.close()  # 关闭
+                self.driver.switch_to.window(windows[0])  # 切换指定页面
             elif title == "噪声":
                 self.click_button_id("investigate")
                 self.click_button_id("backinside")
