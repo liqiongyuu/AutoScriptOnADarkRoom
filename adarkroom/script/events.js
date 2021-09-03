@@ -3,7 +3,7 @@
  */
 var Events = {
 
-	_EVENT_TIME_RANGE: [3, 6], // range, in minutes
+	_EVENT_TIME_RANGE: [3, 6], // range, in minutes 调整参数疯狂出事件
 	_PANEL_FADE: 200,
 	_FIGHT_SPEED: 100,
 	_EAT_COOLDOWN: 5,
