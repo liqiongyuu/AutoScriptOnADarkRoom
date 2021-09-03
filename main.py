@@ -31,7 +31,6 @@ class ADarkRoom:
             print(button_id)  # 打印id方便观察程序运行到哪一步
             self.handling_events()  # 处理各种事件
             self.click_page(button_id)  # 点击到对应页面
-            self.handling_events()  # 处理各种事件
             if self.is_exist(By.CSS_SELECTOR, "#{0} > .tooltip".format(button_id)):  # 判断该按钮是否需要材料
                 resource_id = self.not_enough(button_id)  # 获取那些材料不够
                 if resource_id is None:  # 判断材料是否足够
@@ -44,7 +43,8 @@ class ADarkRoom:
 
     def click_button_id(self, button_id):
         """
-        点击id属性的按钮, 有等待
+        点击id属性的按钮, 有等待,                  这步逻辑有问题，等待点击 应该要先进行事件处理，二者 有耦合
+        这步要改！！！
         :param button_id: 按钮的id名称
         """
         WebDriverWait(self.driver, 45).until(lambda x: self.is_clicked(x, button_id))  # 开了加速最多等待45秒，陷阱原速90秒
@@ -104,7 +104,7 @@ class ADarkRoom:
                     self.click_ele_id("leave")
                 else:
                     self.click_ele_id("backinside")
-            elif title == "损毁的陷阱":
+            elif title == "损毁的陷阱":  # 有问题
                 self.click_ele_id("track")
                 self.click_ele_id("end")
             elif title in ["神秘流浪者", "乞丐"]:
@@ -249,14 +249,15 @@ class ADarkRoom:
         self.click_button("gatherButton")
         self.click_button("build_trap")
         while self.is_clicked(self.driver, "build_hut"):
+            if not self.is_exist(By.ID, "building_row_trap"):
+                self.click_button("build_trap")
+                self.click_button("trapsButton")
+            else:
+                self.click_button("trapsButton")
             if self.not_enough("build_hut") is None:  # 判断材料是否足够
                 self.click_button_id("build_hut")
             else:
                 self.click_button("gatherButton")
-            if not self.is_exist(By.ID, "building_row_trap"):
-                self.click_button("build_trap")
-            else:
-                self.click_button("trapsButton")
         sleep(20)
 
         self.driver.quit()
