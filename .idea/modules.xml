@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/ADrakRoomAutoScript.iml" filepath="$PROJECT_DIR$/.idea/ADrakRoomAutoScript.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/AutoScriptOnADarkRoom.iml" filepath="$PROJECT_DIR$/.idea/AutoScriptOnADarkRoom.iml" />
     </modules>
   </component>
 </project>
