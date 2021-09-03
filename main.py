@@ -13,8 +13,10 @@ from selenium.common.exceptions import NoSuchElementException, ElementClickInter
 class ADarkRoom:
     def __init__(self):
         self.driver = webdriver.Chrome()  # 实例化一个浏览器对象
+        # project_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        # self.driver.get(os.path.normpath('file:///{0}/adarkroom/index.html?lang=zh_cn'.format(project_path)))  # 加载到小黑屋
         # self.driver.get("http://adarkroom.doublespeakgames.com/?lang=zh_cn")  # 加载到小黑屋
-        self.driver.get("http://adarkroom.doublespeakgames.com/?lang=zh_cn")  # 加载到小黑屋
+        self.driver.get("file:///C:/Data/Code/LearnPython/AutoScriptOnADarkRoom/adarkroom/index.html?lang=zh_cn")  # 加载到小黑屋
         WebDriverWait(self.driver, 60).until(ec.visibility_of_element_located((By.ID, "event")))  # 等待第一个事件出现
         self.click_button("lightButton")  # 生火-游戏开始
         self.click_ele(By.CSS_SELECTOR, ".hyper")  # 加速
@@ -29,6 +31,7 @@ class ADarkRoom:
             print(button_id)  # 打印id方便观察程序运行到哪一步
             self.handling_events()  # 处理各种事件
             self.click_page(button_id)  # 点击到对应页面
+            self.handling_events()  # 处理各种事件
             if self.is_exist(By.CSS_SELECTOR, "#{0} > .tooltip".format(button_id)):  # 判断该按钮是否需要材料
                 resource_id = self.not_enough(button_id)  # 获取那些材料不够
                 if resource_id is None:  # 判断材料是否足够

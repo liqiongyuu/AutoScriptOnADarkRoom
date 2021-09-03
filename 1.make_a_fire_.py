@@ -8,7 +8,8 @@ class Room:
     def __init__(self):
         # 创建浏览器对象
         self.driver = webdriver.Chrome()
-        self.driver.get('http://adarkroom.doublespeakgames.com/?lang=zh_cn')
+        # self.driver.get('http://adarkroom.doublespeakgames.com/?lang=zh_cn')
+        self.driver.get("file:///C:/Data/Code/LearnPython/AutoScriptOnADarkRoom/adarkroom/index.html?lang=zh_cn")
         self.driver.implicitly_wait(3)  # 隐藏等待
         self.sound()
         self.speed()
