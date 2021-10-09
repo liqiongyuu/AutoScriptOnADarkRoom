@@ -16,7 +16,6 @@ class ADarkRoom:
         # project_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         # self.driver.get(os.path.normpath('file:///{0}/adarkroom/index.html?lang=zh_cn'.format(project_path)))  # 加载到小黑屋
         # self.driver.get("http://adarkroom.doublespeakgames.com/?lang=zh_cn")  # 加载到小黑屋
-        self.driver.get("file:///C:/Data/Code/LearnPython/AutoScriptOnADarkRoom/adarkroom/index.html?lang=zh_cn")  # 加载到小黑屋
         WebDriverWait(self.driver, 60).until(ec.visibility_of_element_located((By.ID, "event")))  # 等待第一个事件出现
         self.click_button("lightButton")  # 生火-游戏开始
         self.click_ele(By.CSS_SELECTOR, ".hyper")  # 加速

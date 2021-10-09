@@ -11,14 +11,20 @@ class Room:
     def __init__(self):
         # 创建浏览器对象
         self.driver = webdriver.Chrome()
-        self.driver.get('http://adarkroom.doublespeakgames.com/?lang=zh_cn')
-        # self.driver.get("file:///G:/Code/LearnPython/AutoScriptOnADarkRoom/adarkroom/index.html?lang=zh_cn")
+        # 用文件运行 而非图省事指向网址 过慢的运行速度会大大拖累脚本编写速度 引入游戏源码就是为了加快游戏进度，加快开发效率
+        # 脚本修改路径 adarkroom-script-outside 	_GATHER_DELAY: 3, 收集木头的速度原先为60建议6
+        # 	_TRAPS_DELAY: 6, 查看陷阱速度原先为90 建议9
+        # 有编写代码将todesk开启或者使用打工皇帝后全屏直接在该电脑中编写，效率会提高不少，我也便于观察你写得怎么样，及时调整
+        # 请尽快写完此项目
+        # self.driver.get('http://adarkroom.doublespeakgames.com/?lang=zh_cn')
+        # self.driver.get("http://127.0.0.1?lang=zh_cn")
+        self.open_url()
         self.driver.implicitly_wait(3)  # 隐藏等待
         self.star()
 
     def open_url(self):
         project_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        self.driver.get(os.path.normpath('file:///{0}/adarkroom/index.html?lang=zh_cn'.format(project_path)))  # 加载到小黑屋
+        self.driver.get(os.path.normpath('file:///{0}/AutoScriptOnADarkRoom/adarkroom/index.html?lang=zh_cn'.format(project_path)))  # 加载到小黑屋
         time.sleep(2)
 
     def click(self, by, value):
@@ -27,7 +33,7 @@ class Room:
         """
         self.driver.find_element(by, value).click()
 
-    def click_id(self, id):
+    def click_id(self, id):  # id为保留字 改成ele_id可能会更好点
         """
         根据id定位元素并点击
         """
@@ -40,16 +46,17 @@ class Room:
         """
         try:
             self.click_id(id)
+        # except ElementNotInteractableException:
+        #     self.event()
+        #     self.click_id(id)
         except NoSuchElementException:
             print("找不到元素：", id)
-        except ElementClickInterceptedException:
-            pass
-        except ElementNotInteractableException:
             self.event()
             self.click_id(id)
+        except ElementClickInterceptedException:
+            pass
         except EOFError as e:
             print("click_id_event", e)
-            pass
 
     def click_css(self, css):
         """
@@ -61,13 +68,13 @@ class Room:
         """
         定位至元素
         """
-        return self.driver.find_element(by, value)
+        return self.driver.find_element(by, value).get_attribute()
 
     def element_css(self, css):
         """
         根据css定位元素
         """
-        self.element(By.CSS_SELECTOR, css)
+        return self.element(By.CSS_SELECTOR, css)  # 定位元素要返回出去才能用
 
     def get_number(self, css):
         """
@@ -77,10 +84,10 @@ class Room:
             number = int(self.element_css(css).get_attribute('textContent'))
             return number
         except EOFError as e:
-            print("get_number:", e)
+            print("get_number:", e)  # e代表是捕获的异常名称 比如NoSuchElementException， get_number做前置提示词不合适 直接打印e即可
             return 0
 
-    def get_text(self, css, type):
+    def get_text(self, css, type):  # type为保留字 改为name可能会更好点
         """
         获取元素文本内容
         """
@@ -89,7 +96,7 @@ class Room:
         except NoSuchElementException:
             print("No text found")
 
-    def sound(self):
+    def sound(self):  # 该函数复用可能性不大，并且代码量较少，建议直接书写在需要的地方
         """
         出现声音弹窗是选择是
         """
@@ -139,13 +146,14 @@ class Room:
 
     def event(self):
         # 判断意外弹窗
-        self.driver.implicitly_wait(1)
+        self.driver.implicitly_wait(1)  # 隐式等待全局有效 请勿重复设置
+        # 定位元素方法前头有写，请勿增加代码冗余
         title = self.driver.find_element_by_class_name('eventTitle').get_attribute('textContent')
         print(title)
         if title == 'Penrose':
             self.event_Penrose()
 
-    def event_Penrose(self):
+    def event_Penrose(self):  # 函数名应当小写
         self.click_id('give in')
         time.sleep(3)
         handles = self.driver.window_handles  # 获取当前打开的所有窗口的句柄
@@ -155,7 +163,7 @@ class Room:
 
     def firewood(self):
         # 循环烧柴
-        for _ in range(4):
+        for _ in range(4):  # 4用参数替代使用，比如firewood(self, num): for _ in range(num)，函数可复用度将大大提高
             self.click_id_event('stokeButton')  # 烧柴
             time.sleep(5)
 
@@ -168,16 +176,16 @@ class Room:
         self.click_id_event(action_id)
 
     # 循环动作
-    def fire_cut_trapd(self):
+    def fire_cut_trapd(self):  # 单词拼写错误trapd应为trap
         """
         循环完成烧火，砍柴，看陷阱
         """
-        for _ in range(5):
+        for _ in range(5): # 5用参数替代使用，比如fire_cut_trapd(self, num): for _ in range(num)，函数可复用度将大大提高
             self.address_action('location_outside', 'gatherButton')  # 静谧森林伐木
             self.address_action('location_outside', 'trapsButton')  # 静谧森林看陷阱
             self.address_action('location_room', 'stokeButton')  # 生活间烧柴
 
-    def star(self):
+    def star(self): # 单词错误应为start
         self.sound()
         self.speed()
         self.click_id('lightButton')
@@ -188,5 +196,5 @@ class Room:
 
 if __name__ == '__main__':
     room = Room()
-    # room.fire_cut_trapd()
+    # room.fire_cut_trapd() # 此处使用room.star()即可运行整个程序
     room.driver.quit()
