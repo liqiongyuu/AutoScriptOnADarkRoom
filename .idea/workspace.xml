@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c198b0ee-1bea-4e23-8910-c985aa67e2cc" name="更改" comment="新增事件处理">
+    <list default="true" id="c198b0ee-1bea-4e23-8910-c985aa67e2cc" name="更改" comment="添加主流程进度">
+      <change afterPath="$PROJECT_DIR$/Pages/Event.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/Header.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/Menu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/Outside.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page/Common.py" beforeDir="false" afterPath="$PROJECT_DIR$/Page/Common.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Page/Common.py" beforeDir="false" afterPath="$PROJECT_DIR$/Common/BasePage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Page/Room.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Room.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scripts/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/adarkroom/yarn.lock" beforeDir="false" />
     </list>
@@ -52,11 +58,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Scripts" />
-    <property name="settings.editor.selected.configurable" value="yiiguxing.plugin.translate" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Common" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\她\Code\LearnPython\AutoScriptOnADarkRoom\Common" />
       <recent name="D:\她\Code\LearnPython\AutoScriptOnADarkRoom\Scripts" />
     </key>
   </component>
@@ -73,6 +80,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Scripts/Main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -126,6 +134,7 @@
       <workItem from="1630936081894" duration="4840000" />
       <workItem from="1631867470757" duration="66000" />
       <workItem from="1631867591765" duration="752000" />
+      <workItem from="1633684118053" duration="102970000" />
     </task>
     <task id="LOCAL-00001" summary="大体完成建完所有房子的操作">
       <created>1630683936888</created>
@@ -162,7 +171,49 @@
       <option name="project" value="LOCAL" />
       <updated>1630813959329</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="更新 readme">
+      <created>1633786839572</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1633786839572</updated>
+    </task>
+    <task id="LOCAL-00007" summary="分离 page 便于维护">
+      <created>1633786882970</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1633786882970</updated>
+    </task>
+    <task id="LOCAL-00008" summary="先期脚本重构">
+      <created>1633786904969</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1633786904969</updated>
+    </task>
+    <task id="LOCAL-00009" summary="重构">
+      <created>1633786914973</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1633786914974</updated>
+    </task>
+    <task id="LOCAL-00010" summary="更新注释 添加点击等待">
+      <created>1633838480855</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1633838480855</updated>
+    </task>
+    <task id="LOCAL-00011" summary="添加主流程进度">
+      <created>1633838514498</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1633838514498</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +238,12 @@
     <MESSAGE value="页面等待间隙的事件会导致点不上 需修复！！" />
     <MESSAGE value="backup" />
     <MESSAGE value="新增事件处理" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增事件处理" />
+    <MESSAGE value="更新 readme" />
+    <MESSAGE value="分离 page 便于维护" />
+    <MESSAGE value="先期脚本重构" />
+    <MESSAGE value="重构" />
+    <MESSAGE value="更新注释 添加点击等待" />
+    <MESSAGE value="添加主流程进度" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加主流程进度" />
   </component>
 </project>
