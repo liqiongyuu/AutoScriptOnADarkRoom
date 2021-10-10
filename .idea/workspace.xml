@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c198b0ee-1bea-4e23-8910-c985aa67e2cc" name="更改" comment="新增事件处理">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Zz.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Page/Common.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Page/Room.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/AutoScriptOnADarkRoom.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AutoScriptOnADarkRoom.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.make_a_fire.py" beforeDir="false" afterPath="$PROJECT_DIR$/1.make_a_fire.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Page/Common.py" beforeDir="false" afterPath="$PROJECT_DIR$/Page/Common.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/adarkroom/yarn.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
