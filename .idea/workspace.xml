@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c198b0ee-1bea-4e23-8910-c985aa67e2cc" name="更改" comment="添加主流程进度">
-      <change afterPath="$PROJECT_DIR$/Pages/Event.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pages/Header.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pages/Menu.py" afterDir="false" />
+    <list default="true" id="c198b0ee-1bea-4e23-8910-c985aa67e2cc" name="更改" comment="贯彻 ＰＯ　模式">
       <change afterPath="$PROJECT_DIR$/Pages/Outside.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page/Common.py" beforeDir="false" afterPath="$PROJECT_DIR$/Common/BasePage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Page/Room.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Room.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adarkroom/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +126,7 @@
       <workItem from="1630936081894" duration="4840000" />
       <workItem from="1631867470757" duration="66000" />
       <workItem from="1631867591765" duration="752000" />
-      <workItem from="1633684118053" duration="102970000" />
+      <workItem from="1633684118053" duration="103178000" />
     </task>
     <task id="LOCAL-00001" summary="大体完成建完所有房子的操作">
       <created>1630683936888</created>
@@ -213,7 +205,21 @@
       <option name="project" value="LOCAL" />
       <updated>1633838514498</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="更新 README.md">
+      <created>1633873558602</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1633873558602</updated>
+    </task>
+    <task id="LOCAL-00013" summary="贯彻 ＰＯ　模式">
+      <created>1633873647259</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1633873647259</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +250,8 @@
     <MESSAGE value="重构" />
     <MESSAGE value="更新注释 添加点击等待" />
     <MESSAGE value="添加主流程进度" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加主流程进度" />
+    <MESSAGE value="更新 README.md" />
+    <MESSAGE value="贯彻 ＰＯ　模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="贯彻 ＰＯ　模式" />
   </component>
 </project>
