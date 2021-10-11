@@ -6,7 +6,7 @@ import time
 import os
 
 
-class Roomdram(object):
+class RoomDark(object):
 
     def __init__(self):
         # 创建浏览器对象
@@ -73,8 +73,8 @@ class Roomdram(object):
         return number
 
 
-    if __name__ == '__main__':
-    room = Roomdram()
+if __name__ == '__main__':
+    room = RoomDark()
     room.open_url()
     room.sound()  # 设置声音
     room.speed()  # 设置速度
