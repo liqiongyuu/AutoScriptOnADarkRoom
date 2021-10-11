@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+import base64
 import os
 from time import sleep
 
@@ -29,12 +30,30 @@ class Main:
         self.event.click_no()
         self.room.stoke_fire()
         self.room.stoke_fire()
-        self.room.stoke_fire()
-        self.room.wait_room()
-        self.menu.switch_to_outside()
-        self.outside.gather_wood()
-        self.outside.gather_wood()
-        sleep(20)
+        # self.room.stoke_fire()
+        # self.room.wait_outside()
+        # for _ in range(2):
+        #     self.menu.switch_to_outside()
+        #     self.outside.gather_wood()
+        #     self.menu.switch_to_room()
+        #     self.room.stoke_fire()
+        #     self.room.stoke_fire()
+        #     self.menu.switch_to_outside()
+        #     sleep(2)
+        #     self.menu.switch_to_room()
+        #     self.room.stoke_fire()
+        #     self.room.stoke_fire()
+        # self.menu.switch_to_outside()
+        # self.outside.gather_wood()
+        # self.menu.switch_to_room()
+        # self.room.build_cart()
+        # self.room.stoke_fire()
+        # self.menu.switch_to_outside()
+        # self.outside.gather_wood()
+        # self.menu.switch_to_room()
+        # self.room.build_trap()
+        self.menu.save("001")
+        sleep(200)
         self.driver.quit()
 
 

@@ -1,0 +1,1 @@
+{"version":1.3,"features":{"location":{"room":true}},"stores":{},"character":{},"income":{},"timers":{},"game":{"builder":{"level":0},"temperature":{"value":0,"text":"寒冷刺骨"},"fire":{"value":4,"text":"熊熊燃烧"}},"playStats":{"audioAlertShown":true},"previous":{},"outfit":{},"config":{"soundOn":false,"hyperMode":true},"cooldown":{"stokeButton":10}}
