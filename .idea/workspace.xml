@@ -2,29 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c198b0ee-1bea-4e23-8910-c985aa67e2cc" name="更改" comment="新增 outside 页">
+      <change afterPath="$PROJECT_DIR$/Data/001.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.make_a_fire.py" beforeDir="false" afterPath="$PROJECT_DIR$/1.make_a_fire.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.make_a_fire_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/1.make_a_fire_1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.make_a_fire_2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1.make_a_fire_3.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2.gather.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Pages/Event.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Event.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Header.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Pages/Menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Outside.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Outside.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pages/Room.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Room.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RoomKeep..txt" beforeDir="false" afterPath="$PROJECT_DIR$/Data/RoomKeep..txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scripts/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/script/outside.js" beforeDir="false" afterPath="$PROJECT_DIR$/adarkroom/script/outside.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/adarkroom/yarn.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/keep.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/make_a_fire2.2.py" beforeDir="false" afterPath="$PROJECT_DIR$/make_a_fire2.2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/make_a_fire_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/makw_a_fire.py" beforeDir="false" afterPath="$PROJECT_DIR$/makw_a_fire.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/one.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/roomkeep.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Data/roomkeep.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story _rsyj.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/text.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
