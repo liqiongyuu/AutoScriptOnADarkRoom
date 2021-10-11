@@ -11,9 +11,6 @@ class EventEle:
 
 
 class Event(BasePage):
-    def __init__(self, driver):
-        super(Event, self).__init__(driver)
-
     def click_yes(self):
         self.click(EventEle.YES)
 

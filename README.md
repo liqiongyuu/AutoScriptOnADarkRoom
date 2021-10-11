@@ -13,3 +13,9 @@
 ### 缩写说明
 
 - ele -> element
+
+### 目录
+- adrakroom 存放游戏源码
+- Common 存放公有方法
+- Page 存放各个页面的定位和操作
+- Script 存放主要的运行方法

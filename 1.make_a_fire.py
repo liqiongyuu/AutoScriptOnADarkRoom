@@ -121,7 +121,7 @@ class Room:
         # 获取游戏进度文本
         text = self.get_text('#description > textarea', 'value')
         # 打开空文本文本并赋予读写
-        with open("RoomKeep.txt", 'w') as f:
+        with open("Data/roomkeep.txt", 'w') as f:
             f.write(text)
         print(text)
         self.click_id('done')  # 完成
@@ -132,7 +132,7 @@ class Room:
         """
         try:
             # 读取文本
-            with open("RoomKeep.txt") as f:
+            with open("Data/roomkeep.txt") as f:
                 text = f.read()
             self.click_css('.menu > span:nth-child(8)')  # 定位至保存
             self.click_id('import')  # 子弹窗选择导入游戏进度

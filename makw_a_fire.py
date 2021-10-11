@@ -41,7 +41,7 @@ class Room(object):
         # 获取游戏进度文本
         text = self.driver.find_element_by_css_selector('#description > textarea').get_attribute('value')
         # 打开空文本文本并赋予读写
-        with open("RoomKeep.txt", 'w') as f:
+        with open("Data/roomkeep.txt", 'w') as f:
             f.write(text)
         print(text)
         self.driver.find_element_by_id('done').click()  # 完成
@@ -51,7 +51,7 @@ class Room(object):
         # 游戏导入
         try:
             # 读取文本
-            with open("RoomKeep.txt") as f:
+            with open("Data/roomkeep.txt") as f:
                 text = f.read()
             self.driver.find_element_by_css_selector('body > div.menu > span:nth-child(8)').click()  # 定位至保存
             self.driver.find_element_by_id('import').click()  # 子弹窗选择导入游戏进度

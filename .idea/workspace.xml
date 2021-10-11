@@ -1,9 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c198b0ee-1bea-4e23-8910-c985aa67e2cc" name="更改" comment="贯彻 ＰＯ　模式">
-      <change afterPath="$PROJECT_DIR$/Pages/Outside.py" afterDir="false" />
+    <list default="true" id="c198b0ee-1bea-4e23-8910-c985aa67e2cc" name="更改" comment="新增 outside 页">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.make_a_fire.py" beforeDir="false" afterPath="$PROJECT_DIR$/1.make_a_fire.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.make_a_fire_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/1.make_a_fire_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.make_a_fire_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.make_a_fire_3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/2.gather.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Event.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Event.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Header.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Outside.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Outside.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Room.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Room.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RoomKeep..txt" beforeDir="false" afterPath="$PROJECT_DIR$/Data/RoomKeep..txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/keep.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/make_a_fire2.2.py" beforeDir="false" afterPath="$PROJECT_DIR$/make_a_fire2.2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/make_a_fire_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/makw_a_fire.py" beforeDir="false" afterPath="$PROJECT_DIR$/makw_a_fire.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/one.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/roomkeep.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Data/roomkeep.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/story _rsyj.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/text.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +76,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\她\Code\LearnPython\AutoScriptOnADarkRoom\Data" />
       <recent name="D:\她\Code\LearnPython\AutoScriptOnADarkRoom\Common" />
       <recent name="D:\她\Code\LearnPython\AutoScriptOnADarkRoom\Scripts" />
     </key>
@@ -126,7 +148,7 @@
       <workItem from="1630936081894" duration="4840000" />
       <workItem from="1631867470757" duration="66000" />
       <workItem from="1631867591765" duration="752000" />
-      <workItem from="1633684118053" duration="103178000" />
+      <workItem from="1633684118053" duration="103804000" />
     </task>
     <task id="LOCAL-00001" summary="大体完成建完所有房子的操作">
       <created>1630683936888</created>
@@ -219,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633873647259</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="新增 outside 页">
+      <created>1633873743437</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1633873743437</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,6 +281,7 @@
     <MESSAGE value="添加主流程进度" />
     <MESSAGE value="更新 README.md" />
     <MESSAGE value="贯彻 ＰＯ　模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="贯彻 ＰＯ　模式" />
+    <MESSAGE value="新增 outside 页" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增 outside 页" />
   </component>
 </project>
