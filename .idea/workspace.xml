@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c198b0ee-1bea-4e23-8910-c985aa67e2cc" name="更改" comment="新增 outside 页">
-      <change beforePath="$PROJECT_DIR$/Scripts/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adarkroom/yarn.lock" beforeDir="false" />
+    <list default="true" id="c198b0ee-1bea-4e23-8910-c985aa67e2cc" name="更改" comment="更新">
+      <change afterPath="$PROJECT_DIR$/Data/01.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Scripts/02_build_huts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/BasePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/Common/BasePage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/001.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Event.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Event.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/01_build_cat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,8 +67,8 @@
       <recent name="D:\她\Code\LearnPython\AutoScriptOnADarkRoom\Scripts" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Main">
-    <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.02_build_huts">
+    <configuration name="01_build_cat" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AutoScriptOnADarkRoom" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -74,7 +81,29 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Scripts/Main.py" />
+      <option name="SCRIPT_NAME" value="D:\她\Code\LearnPython\AutoScriptOnADarkRoom\Scripts\01_build_cat.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="02_build_huts" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="AutoScriptOnADarkRoom" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Scripts/02_build_huts.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -107,8 +136,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Main" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.02_build_huts" />
+        <item itemvalue="Python.01_build_cat" />
       </list>
     </recent_temporary>
   </component>
@@ -127,7 +157,8 @@
       <workItem from="1630936081894" duration="4840000" />
       <workItem from="1631867470757" duration="66000" />
       <workItem from="1631867591765" duration="752000" />
-      <workItem from="1633684118053" duration="103804000" />
+      <workItem from="1633684118053" duration="105250000" />
+      <workItem from="1634218637574" duration="36000" />
     </task>
     <task id="LOCAL-00001" summary="大体完成建完所有房子的操作">
       <created>1630683936888</created>
@@ -227,7 +258,35 @@
       <option name="project" value="LOCAL" />
       <updated>1633873743437</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="精简函数">
+      <created>1633956847911</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1633956847911</updated>
+    </task>
+    <task id="LOCAL-00016" summary="还原初始速度">
+      <created>1633962050300</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1633962050300</updated>
+    </task>
+    <task id="LOCAL-00017" summary="新增保持游戏进度功能">
+      <created>1633962085346</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1633962085346</updated>
+    </task>
+    <task id="LOCAL-00018" summary="更新">
+      <created>1633962191437</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1633962191437</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,6 +320,10 @@
     <MESSAGE value="更新 README.md" />
     <MESSAGE value="贯彻 ＰＯ　模式" />
     <MESSAGE value="新增 outside 页" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增 outside 页" />
+    <MESSAGE value="精简函数" />
+    <MESSAGE value="还原初始速度" />
+    <MESSAGE value="新增保持游戏进度功能" />
+    <MESSAGE value="更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新" />
   </component>
 </project>
