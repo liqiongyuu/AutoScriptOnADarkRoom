@@ -1,16 +1,22 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from time import sleep
+import os
 
-from selenium.common.exceptions import NoSuchElementException
-from selenium.webdriver.common.by import By
+from selenium.common.exceptions import NoSuchElementException, ElementClickInterceptedException
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
+
+from Pages.Event import Event
 
 
 class BasePage(object):
     def __init__(self, driver):
         self.driver = driver
+        self.event = Event(self.driver)
+
+    def go_file_url(self, url):
+        """ 相对路径转为绝对路径，并拼接成 url 格式 """
+        self.driver.get("file:///{0}".format(os.path.abspath(url)))
 
     def click(self, loc):
         """移动到对应元素并点击
@@ -21,15 +27,17 @@ class BasePage(object):
             self.driver.find_element(*loc).click()
         except NoSuchElementException:
             print("{0} = {1} element not found!".format(*loc))
+        except ElementClickInterceptedException:
+            Event(self.driver).handling_events()
+            self.driver.find_element(*loc).click()
 
-    def is_exist(self, by, value):
-        """判断元素是否存在 is_exist(By.CLASS_NAME, "eventTitle")
-        :param by: By.ID By.CLASS_NAME
-        :param value: 对应的值
+    def is_exist(self, loc):
+        """判断元素是否存在 is_exist((By.CLASS_NAME, "eventTitle"))
+        :param loc:
         :return: 存在返回True 不存在返回False
         """
         try:
-            self.driver.find_elements(by, value)
+            self.driver.find_elements(*loc)
             return True
         except NoSuchElementException:  # 没找到按钮就返回False
             return False
@@ -61,8 +69,15 @@ class BasePage(object):
         """等待元素可点击
         :param loc:
         """
-        WebDriverWait(self.driver, 60, 0.2).until(lambda x: self.clickable(x, *loc)).click()
+        try:
+            WebDriverWait(self.driver, 60, 0.2).until(lambda x: self.clickable(x, *loc)).click()
+        except ElementClickInterceptedException:
+            self.event.handling_events()
+            self.click(*loc)
 
     def get_class(self, loc):
         print("{0}, {1}".format(*loc))
         return self.driver.find_element(*loc).get_attribute("class")
+
+
+
