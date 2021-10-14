@@ -258,7 +258,7 @@ class ADarkRoom:
             else:
                 self.click_button("gatherButton")
         sleep(20)
-
+        self.driver.find_element_by_id("").send_keys()
         self.driver.quit()
         # self.click_button("trapsButton")
         # self.click_button("build_hut")

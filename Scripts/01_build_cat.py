@@ -1,26 +1,27 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import base64
-import os
 from time import sleep
 
 from selenium import webdriver
+
+from Common.BasePage import BasePage
 from Pages.Event import Event
 from Pages.Menu import Menu
 from Pages.Outside import Outside
 from Pages.Room import Room
 
 
-class Main:
+class Main(BasePage):
     def __init__(self):
-        self.driver = webdriver.Chrome()
+        self._chrome_options = webdriver.ChromeOptions()
+        # 取消 “Chrome正受到自动测试软件的控制。”的提示
+        self._chrome_options.add_experimental_option("excludeSwitches", ['enable-automation'])
+        self.driver = webdriver.Chrome(options=self._chrome_options)
+        super(Main, self).__init__(self.driver)
         self.room = Room(self.driver)
         self.menu = Menu(self.driver)
         self.event = Event(self.driver)
         self.outside = Outside(self.driver)
-
-    def go_file_url(self, url):
-        self.driver.get("file:///{0}".format(os.path.abspath(url)))  # 相对路径转为绝对路径，并拼接成 url 格式
 
     def go(self):
         self.go_file_url("../adarkroom/index.html?lang=zh_cn")
@@ -52,8 +53,7 @@ class Main:
         self.outside.gather_wood()
         self.menu.switch_to_room()
         self.room.build_trap()
-        self.menu.save("001")
-        sleep(200)
+        self.menu.save("01.json")
         self.driver.quit()
 
 
