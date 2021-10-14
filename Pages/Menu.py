@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+import base64
 from time import sleep
 
 from selenium.webdriver.common.by import By
@@ -37,6 +38,20 @@ class Menu(BasePage):
         event = Event(self.driver)
         self.click(MenuEle.SAVE)
         event.click_export()
-        with open("../Data/{0}.json".format(file_name), "wb") as f:
+        with open("../Data/" + file_name, "wb") as f:
             f.write(event.get_save_text())
         event.click_got_it()
+
+    def import_data(self, file_name):
+        """ 导入游戏数据 """
+        try:
+            with open("../Data/" + file_name, "rb") as f:
+                data = f.readline()
+            data64 = base64.b64encode(data).decode("utf-8")
+            self.click(MenuEle.SAVE)
+            self.click(EventEle.IMPORT_ELE)
+            self.click(EventEle.YES)
+            self.driver.find_element(*EventEle.SAVE_TEXT).send_keys(data64)
+            self.click(EventEle.OKAY)
+        except FileNotFoundError:
+            print(file_name + " not found!")
