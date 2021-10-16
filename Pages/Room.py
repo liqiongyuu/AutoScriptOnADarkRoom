@@ -12,20 +12,23 @@ class RoomEle:
     CART = (By.ID, "build_cart")
     TRAP = (By.ID, "build_trap")
     HUT = (By.ID, "build_hut")
-
+    LODGE = (By.ID, "build_lodge")
 
 class Room(BasePage):
     def wait_outside(self):
         self.wait(MenuEle.LOCATION_OUTSIDE)
 
     def light_fire(self):
-        self.wait_click(RoomEle.LIGHT_FIRE)
+        self.wait_clickable(RoomEle.LIGHT_FIRE)
 
     def stoke_fire(self):
-        self.wait_click(RoomEle.STOKE_FIRE)
+        self.wait_clickable(RoomEle.STOKE_FIRE)
 
     def build_cart(self):
         self.click(RoomEle.CART)
+
+    def build_lodge(self):
+        self.click(RoomEle.LODGE)
 
     def get_stores_val(self, resource_id):
         """ 获取右侧库存id对应材料的材料数

@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="c198b0ee-1bea-4e23-8910-c985aa67e2cc" name="更改" comment="重构和规范命名">
-      <change afterPath="$PROJECT_DIR$/Scripts/03_hoarding_resources.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/BasePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/Common/BasePage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/02.json" beforeDir="false" afterPath="$PROJECT_DIR$/Data/02.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Outside.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Outside.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Room.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Room.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/02_build_huts.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/02_build_huts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adarkroom/yarn.lock" beforeDir="false" />
-    </list>
+    <list default="true" id="c198b0ee-1bea-4e23-8910-c985aa67e2cc" name="更改" comment="新增建小屋" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,7 +57,7 @@
       <recent name="D:\她\Code\LearnPython\AutoScriptOnADarkRoom\Scripts" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.03_hoarding_resources">
+  <component name="RunManager" selected="Python.02_build_huts">
     <configuration name="01_build_cat" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AutoScriptOnADarkRoom" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -114,27 +102,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="03_hoarding_resources" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="AutoScriptOnADarkRoom" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Scripts" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:\她\Code\LearnPython\AutoScriptOnADarkRoom\Scripts\03_hoarding_resources.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AutoScriptOnADarkRoom" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -159,7 +126,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.03_hoarding_resources" />
         <item itemvalue="Python.02_build_huts" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.01_build_cat" />
@@ -183,7 +149,7 @@
       <workItem from="1631867591765" duration="752000" />
       <workItem from="1633684118053" duration="105250000" />
       <workItem from="1634218637574" duration="36000" />
-      <workItem from="1634218696523" duration="819000" />
+      <workItem from="1634218696523" duration="1063000" />
     </task>
     <task id="LOCAL-00001" summary="大体完成建完所有房子的操作">
       <created>1630683936888</created>
@@ -353,7 +319,21 @@
       <option name="project" value="LOCAL" />
       <updated>1634218916395</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="更新 readme">
+      <created>1634382526487</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1634382526487</updated>
+    </task>
+    <task id="LOCAL-00026" summary="新增建小屋">
+      <created>1634382588371</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1634382588371</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,7 +358,6 @@
     <MESSAGE value="页面等待间隙的事件会导致点不上 需修复！！" />
     <MESSAGE value="backup" />
     <MESSAGE value="新增事件处理" />
-    <MESSAGE value="更新 readme" />
     <MESSAGE value="分离 page 便于维护" />
     <MESSAGE value="先期脚本重构" />
     <MESSAGE value="重构" />
@@ -392,10 +371,11 @@
     <MESSAGE value="新增保持游戏进度功能" />
     <MESSAGE value="更新" />
     <MESSAGE value="建小车完成" />
-    <MESSAGE value="新增建小屋" />
     <MESSAGE value="新增意外事件处理" />
     <MESSAGE value="规范命名" />
     <MESSAGE value="重构和规范命名" />
-    <option name="LAST_COMMIT_MESSAGE" value="重构和规范命名" />
+    <MESSAGE value="更新 readme" />
+    <MESSAGE value="新增建小屋" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增建小屋" />
   </component>
 </project>

@@ -2,7 +2,8 @@
 # -*- coding: utf-8 -*-
 import os
 
-from selenium.common.exceptions import NoSuchElementException, ElementClickInterceptedException
+from selenium.common.exceptions import NoSuchElementException, ElementClickInterceptedException, \
+    ElementNotInteractableException
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 
@@ -23,13 +24,14 @@ class BasePage(object):
         :param loc:
         """
         try:
-            # self.driver.execute_script("arguments[0].click();", self.driver.find_element(by, value))
             self.driver.find_element(*loc).click()
         except NoSuchElementException:
             print("{0} = {1} element not found!".format(*loc))
         except ElementClickInterceptedException:
             self.event.handling_events()
             self.driver.find_element(*loc).click()
+        except ElementNotInteractableException as e:
+            print(e)
 
     def is_exist(self, loc):
         """判断元素是否存在 is_exist((By.CLASS_NAME, "eventTitle"))
@@ -65,7 +67,7 @@ class BasePage(object):
         except NoSuchElementException:  # 找不到按钮报错
             print(by + " = " + value + " not found！")
 
-    def wait_click(self, loc):
+    def wait_clickable(self, loc):
         """等待元素可点击
         :param loc:
         """

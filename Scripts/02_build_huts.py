@@ -6,7 +6,7 @@ from selenium import webdriver
 
 from Common.BasePage import BasePage
 from Pages.Event import Event, EventEle
-from Pages.Menu import Menu, MenuEle
+from Pages.Menu import Menu
 from Pages.Outside import Outside, OutsideEle
 from Pages.Room import Room
 
@@ -25,9 +25,8 @@ class Main(BasePage):
 
     def go(self):
         self.go_file_url("../adarkroom/index.html?lang=zh_cn")
-        self.room.light_fire()
-        sleep(4)  # 等待必出的弹窗
-        self.event.click_no()
+        self.wait(EventEle.NO)  # 等待必出的弹窗
+        self.click(EventEle.NO)
         sleep(1)  # 必须等待一秒，等待弹窗消失再点保存，否则会报错
         self.menu.import_data("01.json")
         self.menu.pick_up_speed()  # 设置加速
@@ -49,7 +48,7 @@ class Main(BasePage):
                 self.menu.switch_to_room()
                 self.room.build_trap()
                 self.menu.switch_to_outside()
-            sleep(0.7)  # 太快太占用系统资源，太慢有停滞感， 0.7 比较合理
+            sleep(0.7)  # 太快会多占用系统资源，太慢有停滞感， 0.7 比较舒适
         self.menu.save("02.json")
         self.driver.quit()
 
