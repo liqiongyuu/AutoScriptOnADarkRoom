@@ -6,7 +6,7 @@ from selenium import webdriver
 
 from Common.BasePage import BasePage
 from Pages.Event import Event
-from Pages.Menu import Menu
+from Pages.Menu import Menu, MenuEle
 from Pages.Outside import Outside
 from Pages.Room import Room
 
@@ -26,6 +26,7 @@ class Main(BasePage):
     def go(self):
         self.go_file_url("../adarkroom/index.html?lang=zh_cn")
         self.room.light_fire()
+        self.click(MenuEle.HYPER)
         self.menu.pick_up_speed()  # 设置加速
         sleep(3)
         self.event.click_no()

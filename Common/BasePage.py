@@ -28,7 +28,7 @@ class BasePage(object):
         except NoSuchElementException:
             print("{0} = {1} element not found!".format(*loc))
         except ElementClickInterceptedException:
-            Event(self.driver).handling_events()
+            self.event.handling_events()
             self.driver.find_element(*loc).click()
 
     def is_exist(self, loc):
@@ -50,7 +50,7 @@ class BasePage(object):
 
     @staticmethod
     def clickable(driver, by, value):
-        """判断按钮是否可点击，ec判断可点击函数不适用
+        """判断按钮是否可点击，用于判断
         :param driver: 浏览器实例
         :param value:
         :param by:
@@ -73,11 +73,25 @@ class BasePage(object):
             WebDriverWait(self.driver, 60, 0.2).until(lambda x: self.clickable(x, *loc)).click()
         except ElementClickInterceptedException:
             self.event.handling_events()
-            self.click(*loc)
+            self.driver.find_element(*loc).click()
 
-    def get_class(self, loc):
-        print("{0}, {1}".format(*loc))
-        return self.driver.find_element(*loc).get_attribute("class")
+    def is_clicked(self, loc):
+        """ 判断是否可点击
+        :param loc:
+        :return: Ture or False
+        """
+        return "disable" not in self.driver.find_element(*loc).get_attribute("class")
 
-
+    def get_resource_val(self, resource_id):
+        """
+        获取右侧库存id对应材料的材料数
+        :param resource_id: 材料对应的id值
+        :return: 材料数的整数类型
+        """
+        try:
+            val = self.driver.find_element_by_css_selector("#{0} > .row_val".format(resource_id)).get_attribute(
+                "textContent")
+            return int(val)
+        except NoSuchElementException:
+            return 0
 

@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c198b0ee-1bea-4e23-8910-c985aa67e2cc" name="更改" comment="更新">
-      <change afterPath="$PROJECT_DIR$/Data/01.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scripts/02_build_huts.py" afterDir="false" />
+    <list default="true" id="c198b0ee-1bea-4e23-8910-c985aa67e2cc" name="更改" comment="重构和规范命名">
+      <change afterPath="$PROJECT_DIR$/Data/02.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Common/BasePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/Common/BasePage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/001.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Pages/Event.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Event.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Menu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scripts/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/01_build_cat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/01_build_cat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/01_build_cat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/02_build_huts.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/02_build_huts.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,8 +134,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.02_build_huts" />
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.01_build_cat" />
       </list>
     </recent_temporary>
@@ -159,6 +157,7 @@
       <workItem from="1631867591765" duration="752000" />
       <workItem from="1633684118053" duration="105250000" />
       <workItem from="1634218637574" duration="36000" />
+      <workItem from="1634218696523" duration="819000" />
     </task>
     <task id="LOCAL-00001" summary="大体完成建完所有房子的操作">
       <created>1630683936888</created>
@@ -286,7 +285,49 @@
       <option name="project" value="LOCAL" />
       <updated>1633962191437</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="建小车完成">
+      <created>1634218832361</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1634218832361</updated>
+    </task>
+    <task id="LOCAL-00020" summary="新增建小屋">
+      <created>1634218843069</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1634218843069</updated>
+    </task>
+    <task id="LOCAL-00021" summary="新增意外事件处理">
+      <created>1634218881385</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1634218881385</updated>
+    </task>
+    <task id="LOCAL-00022" summary="规范命名">
+      <created>1634218890650</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1634218890650</updated>
+    </task>
+    <task id="LOCAL-00023" summary="重构和规范命名">
+      <created>1634218908771</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1634218908771</updated>
+    </task>
+    <task id="LOCAL-00024" summary="重构和规范命名">
+      <created>1634218916395</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1634218916395</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,6 +365,11 @@
     <MESSAGE value="还原初始速度" />
     <MESSAGE value="新增保持游戏进度功能" />
     <MESSAGE value="更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新" />
+    <MESSAGE value="建小车完成" />
+    <MESSAGE value="新增建小屋" />
+    <MESSAGE value="新增意外事件处理" />
+    <MESSAGE value="规范命名" />
+    <MESSAGE value="重构和规范命名" />
+    <option name="LAST_COMMIT_MESSAGE" value="重构和规范命名" />
   </component>
 </project>

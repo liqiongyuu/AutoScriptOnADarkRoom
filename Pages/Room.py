@@ -11,6 +11,7 @@ class RoomEle:
     STOKE_FIRE = (By.ID, "stokeButton")
     CART = (By.ID, "build_cart")
     TRAP = (By.ID, "build_trap")
+    HUT = (By.ID, "build_hut")
 
 
 class Room(BasePage):
@@ -35,3 +36,6 @@ class Room(BasePage):
 
     def build_trap(self):
         self.click(RoomEle.TRAP)
+
+    def build_hut(self):
+        self.click(RoomEle.HUT)
