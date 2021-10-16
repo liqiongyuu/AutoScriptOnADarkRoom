@@ -13,6 +13,8 @@
 ### 缩写说明
 
 - ele -> element
+- val -> value
+- loc -> location
 
 ### 目录
 - adrakroom 存放游戏源码
