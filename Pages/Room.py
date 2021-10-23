@@ -13,6 +13,11 @@ class RoomEle:
     TRAP = (By.ID, "build_trap")
     HUT = (By.ID, "build_hut")
     LODGE = (By.ID, "build_lodge")
+    TRADING_POST = (By.ID, "build_trading post")
+    COMPASS = (By.ID, "build_compass")  # 罗盘
+    TANNERY = (By.ID, "build_tannery")  # 制革屋
+    SMOKE_HOUSE = (By.ID, "build_smokehouse")  # 熏肉房
+
 
 class Room(BasePage):
     def wait_outside(self):

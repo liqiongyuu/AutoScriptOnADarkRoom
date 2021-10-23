@@ -13,6 +13,7 @@ class MenuEle:
     HYPER = (By.CSS_SELECTOR, ".hyper")
     LOCATION_ROOM = (By.ID, "location_room")
     LOCATION_OUTSIDE = (By.ID, "location_outside")
+    LOCATION_PATH = (By.ID, "location_path")
     SAVE = (By.CSS_SELECTOR, ".menu > span:nth-child(8)")
 
 
@@ -28,6 +29,10 @@ class Menu(BasePage):
 
     def switch_to_outside(self):
         self.click(MenuEle.LOCATION_OUTSIDE)
+        sleep(1)
+
+    def switch_to_path(self):
+        self.click(MenuEle.LOCATION_PATH)
         sleep(1)
 
     def save(self, file_name):
