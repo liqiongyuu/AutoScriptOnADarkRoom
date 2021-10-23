@@ -24,7 +24,7 @@ class Main(BasePage):
         self.outside = Outside(self.driver)
 
     def go(self):
-        self.go_file_url("../adarkroom/index.html?lang=zh_cn")
+        self.go_file_url("../ADarkRoom/index.html?lang=zh_cn")
         self.room.light_fire()
         self.click(MenuEle.HYPER)
         self.menu.pick_up_speed()  # 设置加速

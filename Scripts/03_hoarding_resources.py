@@ -6,7 +6,7 @@ from selenium import webdriver
 
 from Common.BasePage import BasePage
 from Pages.Event import Event, EventEle
-from Pages.Menu import Menu, MenuEle
+from Pages.Menu import Menu
 from Pages.Outside import Outside, OutsideEle
 from Pages.Room import Room
 
@@ -24,7 +24,7 @@ class Main(BasePage):
         self.outside = Outside(self.driver)
 
     def go(self):
-        self.go_file_url("../adarkroom/index.html?lang=zh_cn")
+        self.go_file_url("../ADarkRoom/index.html?lang=zh_cn")
         self.wait(EventEle.NO)  # 等待必出的弹窗
         self.click(EventEle.NO)
         sleep(1)  # 必须等待一秒，等待弹窗消失再点保存，否则会报错
@@ -32,18 +32,18 @@ class Main(BasePage):
         self.menu.pick_up_speed()  # 设置加速
         sleep(1)
         self.menu.switch_to_outside()
-        wood_count = self.get_resource_val("row_wood")
-        trap_count = self.get_resource_val("building_row_trap")
+        wood_count = self.get_ele_val("row_wood")
+        trap_count = self.get_ele_val("building_row_trap")
         self.menu.switch_to_room()
         while trap_count < 10 and wood_count >= (10 + trap_count * 10):
             self.room.build_trap()
             sleep(0.5)  # 等待一小会，防止数据未刷新导致建造失败
-            wood_count = self.get_resource_val("row_wood")
-            trap_count = self.get_resource_val("building_row_trap")
+            wood_count = self.get_ele_val("row_wood")
+            trap_count = self.get_ele_val("building_row_trap")
         self.menu.switch_to_outside()
         while trap_count < 10 or wood_count < 400:
-            wood_count = self.get_resource_val("row_wood")
-            trap_count = self.get_resource_val("building_row_trap")
+            wood_count = self.get_ele_val("row_wood")
+            trap_count = self.get_ele_val("building_row_trap")
             if trap_count < 10 and wood_count >= (10 + trap_count * 10):
                 self.menu.switch_to_room()
                 self.room.build_trap()
@@ -60,18 +60,18 @@ class Main(BasePage):
         self.click(OutsideEle.HUNTER_UP10)
         self.click(OutsideEle.HUNTER_UP10)
         while wood_count <= 20000:
-            hut_count = self.get_resource_val("building_row_hut")
-            wood_count = self.get_resource_val("row_wood")
-            trap_count = self.get_resource_val("building_row_trap")
-            baited_trap_count = self.get_resource_val("building_row_baited-trap")
+            hut_count = self.get_ele_val("building_row_hut")
+            wood_count = self.get_ele_val("row_wood")
+            trap_count = self.get_ele_val("building_row_trap")
+            baited_trap_count = self.get_ele_val("building_row_baited-trap")
             if (trap_count + baited_trap_count) < 10 and wood_count >= (10 + (trap_count + baited_trap_count) * 10):
                 self.menu.switch_to_room()
                 while (trap_count + baited_trap_count) < 10 and wood_count >= (10 + (trap_count + baited_trap_count) * 10):
                     self.room.build_trap()
                     sleep(0.5)  # 等待一小会，防止数据未刷新导致建造失败
-                    wood_count = self.get_resource_val("row_wood")
-                    trap_count = self.get_resource_val("building_row_trap")
-                    baited_trap_count = self.get_resource_val("building_row_baited-trap")
+                    wood_count = self.get_ele_val("row_wood")
+                    trap_count = self.get_ele_val("building_row_trap")
+                    baited_trap_count = self.get_ele_val("building_row_baited-trap")
                 self.menu.switch_to_outside()
             if hut_count < 20 and wood_count >= (100 + (hut_count * 50)):
                 self.menu.switch_to_room()

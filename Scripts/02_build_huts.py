@@ -24,7 +24,7 @@ class Main(BasePage):
         self.outside = Outside(self.driver)
 
     def go(self):
-        self.go_file_url("../adarkroom/index.html?lang=zh_cn")
+        self.go_file_url("../ADarkRoom/index.html?lang=zh_cn")
         self.wait(EventEle.NO)  # 等待必出的弹窗
         self.click(EventEle.NO)
         sleep(1)  # 必须等待一秒，等待弹窗消失再点保存，否则会报错
@@ -33,9 +33,9 @@ class Main(BasePage):
         self.menu.switch_to_outside()
         hut_count = 0
         while hut_count < 20:
-            hut_count = self.get_resource_val("building_row_hut")
-            wood_count = self.get_resource_val("row_wood")
-            trap_count = self.get_resource_val("building_row_trap")
+            hut_count = self.get_ele_val("building_row_hut")
+            wood_count = self.get_ele_val("row_wood")
+            trap_count = self.get_ele_val("building_row_trap")
             if self.is_clicked(OutsideEle.GATHER_WOOD):
                 self.outside.gather_wood()
             if self.is_clicked(OutsideEle.CHECK_TRAPS):
