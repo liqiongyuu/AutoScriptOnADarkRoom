@@ -84,9 +84,8 @@ class BasePage(object):
         """
         return "disable" not in self.driver.find_element(*loc).get_attribute("class")
 
-    def get_resource_val(self, resource_id):
-        """
-        获取右侧库存id对应材料的材料数
+    def get_ele_val(self, resource_id):
+        """ 获取id对应值
         :param resource_id: 材料对应的id值
         :return: 材料数的整数类型
         """
