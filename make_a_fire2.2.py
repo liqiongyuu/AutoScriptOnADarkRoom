@@ -21,7 +21,7 @@ class Room(object):
         # 请求指定站点
         # self.driver.get(url)
         project_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        self.driver.get(os.path.normpath('file:///{0}/adarkroom/index.html?lang=zh_cn'.format(project_path)))  # 加载到小黑屋
+        self.driver.get(os.path.normpath('file:///{0}/ADarkRoom/index.html?lang=zh_cn'.format(project_path)))  # 加载到小黑屋
         time.sleep(2)
 
     # 游戏设置

@@ -5,14 +5,246 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c198b0ee-1bea-4e23-8910-c985aa67e2cc" name="更改" comment="重构和规范命名">
-      <change afterPath="$PROJECT_DIR$/Scripts/03_hoarding_resources.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Scripts/04_build_other.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.make_a_fire.py" beforeDir="false" afterPath="$PROJECT_DIR$/1.make_a_fire.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.make_a_fire_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/1.make_a_fire_1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Common/BasePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/Common/BasePage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/02.json" beforeDir="false" afterPath="$PROJECT_DIR$/Data/02.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Menu.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pages/Outside.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Outside.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pages/Room.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Room.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/01_build_cat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/01_build_cat.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scripts/02_build_huts.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/02_build_huts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/03_hoarding_resources.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/03_hoarding_resources.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/.jshintrc" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/.jshintrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/asteroid-hit-1.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/asteroid-hit-1.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/asteroid-hit-2.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/asteroid-hit-2.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/asteroid-hit-3.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/asteroid-hit-3.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/asteroid-hit-4.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/asteroid-hit-4.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/asteroid-hit-5.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/asteroid-hit-5.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/asteroid-hit-6.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/asteroid-hit-6.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/asteroid-hit-7.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/asteroid-hit-7.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/asteroid-hit-8.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/asteroid-hit-8.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/build.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/build.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/buy.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/buy.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/check-traps.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/check-traps.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/craft.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/craft.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/crash.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/crash.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/death.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/death.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/dusty-path.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/dusty-path.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/eat-meat.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/eat-meat.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/embark.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/embark.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/encounter-tier-1.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/encounter-tier-1.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/encounter-tier-2.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/encounter-tier-2.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/encounter-tier-3.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/encounter-tier-3.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/ending.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/ending.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/event-beast-attack.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/event-beast-attack.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/event-beggar.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/event-beggar.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/event-hut-fire.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/event-hut-fire.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/event-mysterious-wanderer.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/event-mysterious-wanderer.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/event-noises-inside.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/event-noises-inside.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/event-noises-outside.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/event-noises-outside.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/event-nomad.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/event-nomad.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/event-plague.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/event-plague.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/event-ruined-trap.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/event-ruined-trap.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/event-scout.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/event-scout.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/event-shady-builder.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/event-shady-builder.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/event-sick-man.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/event-sick-man.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/event-sickness.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/event-sickness.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/event-soldier-attack.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/event-soldier-attack.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/event-thief.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/event-thief.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/event-wandering-master.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/event-wandering-master.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/fire-burning.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/fire-burning.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/fire-dead.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/fire-dead.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/fire-flickering.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/fire-flickering.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/fire-roaring.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/fire-roaring.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/fire-smoldering.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/fire-smoldering.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/footsteps-1.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/footsteps-1.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/footsteps-2.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/footsteps-2.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/footsteps-3.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/footsteps-3.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/footsteps-4.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/footsteps-4.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/footsteps-5.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/footsteps-5.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/footsteps-6.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/footsteps-6.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/gather-wood.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/gather-wood.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/landmark-battlefield.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/landmark-battlefield.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/landmark-borehole.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/landmark-borehole.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/landmark-cave.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/landmark-cave.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/landmark-city.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/landmark-city.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/landmark-coalmine.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/landmark-coalmine.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/landmark-crashed-ship.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/landmark-crashed-ship.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/landmark-destroyed-village.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/landmark-destroyed-village.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/landmark-friendly-outpost.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/landmark-friendly-outpost.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/landmark-house.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/landmark-house.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/landmark-ironmine.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/landmark-ironmine.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/landmark-sulphurmine.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/landmark-sulphurmine.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/landmark-swamp.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/landmark-swamp.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/landmark-town.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/landmark-town.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/large-village.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/large-village.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/lift-off.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/lift-off.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/light-fire.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/light-fire.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/lonely-hut.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/lonely-hut.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/modest-village.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/modest-village.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/raucous-village.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/raucous-village.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/reinforce-hull.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/reinforce-hull.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/ship.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/ship.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/silent-forest.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/silent-forest.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/space.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/space.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/stoke-fire.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/stoke-fire.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/tiny-village.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/tiny-village.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/upgrade-engine.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/upgrade-engine.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/use-meds.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/use-meds.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/weapon-melee-1.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/weapon-melee-1.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/weapon-melee-3.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/weapon-melee-3.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/weapon-ranged-1.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/weapon-ranged-1.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/weapon-ranged-2.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/weapon-ranged-2.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/weapon-ranged-3.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/weapon-ranged-3.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/weapon-unarmed-1.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/weapon-unarmed-1.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/weapon-unarmed-2.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/weapon-unarmed-2.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/weapon-unarmed-3.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/weapon-unarmed-3.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/audio/world.flac" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/audio/world.flac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/browserWarning.html" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/browserWarning.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/css/dark.css" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/css/dark.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/css/outside.css" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/css/outside.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/css/path.css" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/css/path.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/css/room.css" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/css/room.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/css/ship.css" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/css/ship.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/css/space.css" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/css/space.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/css/world.css" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/css/world.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/dev-server.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/dev-server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/doc/Events.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/doc/Events.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/doc/Zones.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/doc/Zones.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/doc/translation.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/doc/translation.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/img/Logo1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/img/Logo1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/img/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/img/Thumbs.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/img/adr.png" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/img/adr.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/img/chrome.png" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/img/chrome.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/img/firefox.png" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/img/firefox.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/img/ie.png" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/img/ie.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/img/opera.png" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/img/opera.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/img/safari.png" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/img/safari.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/adarkroom.pot" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/adarkroom.pot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/babel.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/babel.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/cs/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/cs/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/cs/strings.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/cs/strings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/de/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/de/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/de/strings.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/de/strings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/de/strings.po" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/de/strings.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/el/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/el/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/el/strings.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/el/strings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/el/strings.po" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/el/strings.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/eo/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/eo/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/eo/strings.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/eo/strings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/eo/strings.po" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/eo/strings.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/es/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/es/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/es/strings.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/es/strings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/es/strings.po" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/es/strings.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/fr/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/fr/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/fr/strings.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/fr/strings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/fr/strings.po" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/fr/strings.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/gl/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/gl/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/gl/strings.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/gl/strings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/gl/strings.po" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/gl/strings.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/id/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/id/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/id/strings.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/id/strings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/id/strings.po" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/id/strings.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/it/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/it/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/it/strings.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/it/strings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/it/strings.po" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/it/strings.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/ja/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/ja/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/ja/strings.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/ja/strings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/ja/strings.po" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/ja/strings.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/ko/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/ko/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/ko/strings.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/ko/strings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/ko/strings.po" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/ko/strings.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/langs.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/langs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/lt_LT/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/lt_LT/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/lt_LT/strings.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/lt_LT/strings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/lt_LT/strings.po" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/lt_LT/strings.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/lv/strings.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/lv/strings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/lv/strings.po" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/lv/strings.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/nb/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/nb/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/nb/strings.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/nb/strings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/nb/strings.po" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/nb/strings.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/pl/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/pl/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/pl/strings.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/pl/strings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/pl/strings.po" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/pl/strings.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/pt/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/pt/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/pt/strings.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/pt/strings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/pt/strings.po" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/pt/strings.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/pt_br/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/pt_br/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/pt_br/strings.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/pt_br/strings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/pt_br/strings.po" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/pt_br/strings.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/ru/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/ru/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/ru/strings.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/ru/strings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/ru/strings.po" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/ru/strings.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/sv/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/sv/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/sv/strings.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/sv/strings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/sv/strings.po" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/sv/strings.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/th/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/th/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/th/strings.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/th/strings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/th/strings.po" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/th/strings.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/tr/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/tr/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/tr/strings.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/tr/strings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/tr/strings.po" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/tr/strings.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/uk/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/uk/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/uk/strings.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/uk/strings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/uk/strings.po" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/uk/strings.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/vi/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/vi/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/vi/strings.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/vi/strings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/vi/strings.po" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/vi/strings.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/zh_cn/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/zh_cn/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/zh_cn/strings.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/zh_cn/strings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/zh_cn/strings.po" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/zh_cn/strings.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/zh_tw/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/zh_tw/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/zh_tw/strings.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/zh_tw/strings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lang/zh_tw/strings.po" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lang/zh_tw/strings.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lib/base64.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lib/base64.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lib/icu.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lib/icu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lib/jquery.color-2.1.2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lib/jquery.color-2.1.2.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lib/jquery.event.move.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lib/jquery.event.move.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lib/jquery.event.swipe.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lib/jquery.event.swipe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lib/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lib/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/lib/translate.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/lib/translate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/mobileWarning.html" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/mobileWarning.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/script/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/script/Button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/script/audio.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/script/audio.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/script/audioLibrary.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/script/audioLibrary.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/script/dropbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/script/dropbox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/script/engine.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/script/engine.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/script/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/script/events.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/script/events/encounters.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/script/events/encounters.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/script/events/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/script/events/global.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/script/events/marketing.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/script/events/marketing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/script/events/outside.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/script/events/outside.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/script/events/room.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/script/events/room.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/script/events/setpieces.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/script/events/setpieces.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/script/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/script/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/script/localization.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/script/localization.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/script/notifications.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/script/notifications.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/script/outside.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/script/outside.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/script/path.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/script/path.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/script/prestige.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/script/prestige.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/script/room.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/script/room.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/script/scoring.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/script/scoring.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/script/ship.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/script/ship.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/script/space.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/script/space.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/script/state_manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/script/state_manager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/script/world.js" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/script/world.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/tools/po2js.py" beforeDir="false" afterPath="$PROJECT_DIR$/ADarkRoom/tools/po2js.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/adarkroom/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/make_a_fire2.2.py" beforeDir="false" afterPath="$PROJECT_DIR$/make_a_fire2.2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/makw_a_fire.py" beforeDir="false" afterPath="$PROJECT_DIR$/makw_a_fire.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +301,7 @@
       <recent name="D:\她\Code\LearnPython\AutoScriptOnADarkRoom\Scripts" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.03_hoarding_resources">
+  <component name="RunManager" selected="Python.04_build_other">
     <configuration name="01_build_cat" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AutoScriptOnADarkRoom" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -135,6 +367,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="04_build_other" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="AutoScriptOnADarkRoom" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Scripts/04_build_other.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="AutoScriptOnADarkRoom" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -159,6 +412,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.04_build_other" />
         <item itemvalue="Python.03_hoarding_resources" />
         <item itemvalue="Python.02_build_huts" />
         <item itemvalue="Python.main" />
@@ -397,5 +651,15 @@
     <MESSAGE value="规范命名" />
     <MESSAGE value="重构和规范命名" />
     <option name="LAST_COMMIT_MESSAGE" value="重构和规范命名" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="worker_id" language="Python" />
+        <watch expression="worker_count" language="Python" />
+        <watch expression="worker_ele" language="Python" />
+        <watch expression="i" language="Python" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

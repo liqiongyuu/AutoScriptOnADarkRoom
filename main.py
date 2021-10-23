@@ -14,7 +14,7 @@ class ADarkRoom:
     def __init__(self):
         self.driver = webdriver.Chrome()  # 实例化一个浏览器对象
         # project_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        # self.driver.get(os.path.normpath('file:///{0}/adarkroom/index.html?lang=zh_cn'.format(project_path)))  # 加载到小黑屋
+        # self.driver.get(os.path.normpath('file:///{0}/ADarkRoom/index.html?lang=zh_cn'.format(project_path)))  # 加载到小黑屋
         # self.driver.get("http://adarkroom.doublespeakgames.com/?lang=zh_cn")  # 加载到小黑屋
         WebDriverWait(self.driver, 60).until(ec.visibility_of_element_located((By.ID, "event")))  # 等待第一个事件出现
         self.click_button("lightButton")  # 生火-游戏开始
