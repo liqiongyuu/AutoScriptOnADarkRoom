@@ -7,7 +7,7 @@ from selenium.common.exceptions import NoSuchElementException, ElementClickInter
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 
-from Pages.Event import Event
+from Pages.event import Event
 
 
 class BasePage(object):
@@ -20,7 +20,7 @@ class BasePage(object):
         self.driver.get("file:///{0}".format(os.path.abspath(url)))
 
     def click(self, loc):
-        """移动到对应元素并点击
+        """点击对应元素
         :param loc:
         """
         try:
@@ -30,8 +30,8 @@ class BasePage(object):
         except ElementClickInterceptedException:
             self.event.handling_events()
             self.driver.find_element(*loc).click()
-        except ElementNotInteractableException as e:
-            print(e)
+        except ElementNotInteractableException:
+            print("{0} = {1} element not interactable!".format(*loc))
 
     def is_exist(self, loc):
         """判断元素是否存在 is_exist((By.CLASS_NAME, "eventTitle"))
@@ -93,6 +93,5 @@ class BasePage(object):
             val = self.driver.find_element_by_css_selector("#{0} > .row_val".format(resource_id)).get_attribute(
                 "textContent")
             return int(val)
-        except NoSuchElementException:
+        except NoSuchElementException:  # 找不到说明对应按钮还没出现即为0
             return 0
-
