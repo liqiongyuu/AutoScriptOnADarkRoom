@@ -4,8 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c198b0ee-1bea-4e23-8910-c985aa67e2cc" name="更改" comment="新增重置工人、增加特定数量工人方法">
+    <list default="true" id="c198b0ee-1bea-4e23-8910-c985aa67e2cc" name="更改" comment="更新readme">
+      <change afterPath="$PROJECT_DIR$/Common/init_script.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace-冲突-熊崽崽的窝_Win10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.make_a_fire.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.make_a_fire_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/BasePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/Common/base_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/01.json" beforeDir="false" afterPath="$PROJECT_DIR$/Data/01.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/02.json" beforeDir="false" afterPath="$PROJECT_DIR$/Data/02.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/RoomKeep..txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/roomkeep.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Event.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/event.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Outside.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/outside.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Room.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/room.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/01_build_cat.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/01_build_cat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/02_build_huts.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/02_build_huts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/03_hoarding_resources.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/03_hoarding_resources.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/04_build_other.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/04_build_other.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adarkroom/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/make_a_fire2.2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/makw_a_fire.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,9 +57,6 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/main.py" root0="FORCE_HIGHLIGHTING" />
-  </component>
   <component name="ProjectId" id="1xdSo1gZfSvCFrp29JSB7svJb59" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -62,8 +81,8 @@
       <recent name="D:\她\Code\LearnPython\AutoScriptOnADarkRoom\Scripts" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.04_build_other">
-    <configuration name="01_build_cat" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.03_hoarding_resources (1)">
+    <configuration name="01_build_cat" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AutoScriptOnADarkRoom" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -75,8 +94,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\她\Code\LearnPython\AutoScriptOnADarkRoom\Scripts\01_build_cat.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Scripts/01_build_cat.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -99,6 +117,27 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Scripts/02_build_huts.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="03_hoarding_resources (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="AutoScriptOnADarkRoom" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Scripts/03_hoarding_resources.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -151,35 +190,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="AutoScriptOnADarkRoom" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+    <list>
+      <item itemvalue="Python.01_build_cat" />
+      <item itemvalue="Python.02_build_huts" />
+      <item itemvalue="Python.03_hoarding_resources" />
+      <item itemvalue="Python.04_build_other" />
+      <item itemvalue="Python.03_hoarding_resources (1)" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.03_hoarding_resources (1)" />
+        <item itemvalue="Python.02_build_huts" />
+        <item itemvalue="Python.01_build_cat" />
         <item itemvalue="Python.04_build_other" />
         <item itemvalue="Python.03_hoarding_resources" />
-        <item itemvalue="Python.02_build_huts" />
-        <item itemvalue="Python.main" />
-        <item itemvalue="Python.01_build_cat" />
       </list>
     </recent_temporary>
   </component>
