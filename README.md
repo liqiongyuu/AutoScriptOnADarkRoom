@@ -20,5 +20,6 @@
 - ADarkRoom 存放游戏源码
 - Common 存放公有方法
 - Data 存放每阶段的测试数据
+- Doc 存放文档信息
 - Page 存放各个页面的定位和操作
 - Script 存放主要脚本的运行方法
