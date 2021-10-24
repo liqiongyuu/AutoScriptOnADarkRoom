@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 from selenium.webdriver.common.by import By
 
-from Common.BasePage import BasePage
-from Pages.Menu import MenuEle
+from Common.base_page import BasePage
+from Pages.menu import MenuEle
 
 
 class RoomEle:
@@ -26,8 +26,9 @@ class Room(BasePage):
     def light_fire(self):
         self.wait_clickable(RoomEle.LIGHT_FIRE)
 
-    def stoke_fire(self):
-        self.wait_clickable(RoomEle.STOKE_FIRE)
+    def stoke_fire(self, count=1):
+        for _ in range(count):
+            self.wait_clickable(RoomEle.STOKE_FIRE)
 
     def build_cart(self):
         self.click(RoomEle.CART)

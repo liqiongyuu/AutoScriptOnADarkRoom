@@ -5,8 +5,8 @@ from time import sleep
 
 from selenium.webdriver.common.by import By
 
-from Common.BasePage import BasePage
-from Pages.Event import EventEle, Event
+from Common.base_page import BasePage
+from Pages.event import EventEle
 
 
 class MenuEle:

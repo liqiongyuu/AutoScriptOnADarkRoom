@@ -6,7 +6,7 @@ from selenium.common.exceptions import ElementClickInterceptedException
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 
-from Common.BasePage import BasePage
+from Common.base_page import BasePage
 
 
 class OutsideEle:
@@ -26,7 +26,7 @@ class Outside(BasePage):
         self.wait_clickable(OutsideEle.CHECK_TRAPS)
 
     def move_click(self, loc):
-        """ 移动到地方再点击，可以避免按钮下方出现小提示导致下方按钮无法点击的情况"""
+        """ 移动到地方再点击，可以避免按钮下方出现小提示导致下方按钮无法点击的情况 """
         try:
             ele = self.driver.find_element(*loc)
             ActionChains(self.driver).move_to_element(ele).click().perform()
