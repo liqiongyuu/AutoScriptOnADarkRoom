@@ -4,6 +4,7 @@ import os
 
 from selenium.common.exceptions import NoSuchElementException, ElementClickInterceptedException, \
     ElementNotInteractableException
+from selenium.webdriver import ActionChains
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 
@@ -95,3 +96,14 @@ class BasePage(object):
             return int(val)
         except NoSuchElementException:  # 找不到说明对应按钮还没出现即为0
             return 0
+
+    def move_click(self, loc):
+        """ 移动到地方再点击，可以避免按钮下方出现小提示导致下方按钮无法点击的情况 """
+        try:
+            self.driver.find_element_by_id("event")
+            self.event.handling_events()
+            ele = self.driver.find_element(*loc)
+            ActionChains(self.driver).move_to_element(ele).click().perform()
+        except NoSuchElementException:
+            ele = self.driver.find_element(*loc)
+            ActionChains(self.driver).move_to_element(ele).click().perform()

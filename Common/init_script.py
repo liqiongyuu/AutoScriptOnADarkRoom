@@ -48,7 +48,7 @@ class InitScript(BasePage):
             if all_trap < 10 and wood_count >= (10 + all_trap * 10):
                 self.menu.switch_to_room()
                 while all_trap < 10 and wood_count >= (10 + all_trap * 10):  # 陷阱会因为野兽多个同时毁坏，需要及时补充
-                    self.room.build_trap()  # 查看陷阱
+                    self.room.build_trap()  # 建造陷阱
                     sleep(0.5)  # 等待一小会，防止数据未刷新导致建造失败
                     wood_count = self.get_ele_val("row_wood")
                     all_trap = self.get_ele_val("building_row_trap") + self.get_ele_val("building_row_baited-trap")

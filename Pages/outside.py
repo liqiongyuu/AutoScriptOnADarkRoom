@@ -1,9 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from time import sleep
-
-from selenium.common.exceptions import ElementClickInterceptedException
-from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 
 from Common.base_page import BasePage
@@ -25,25 +21,15 @@ class Outside(BasePage):
     def check_traps(self):
         self.wait_clickable(OutsideEle.CHECK_TRAPS)
 
-    def move_click(self, loc):
-        """ 移动到地方再点击，可以避免按钮下方出现小提示导致下方按钮无法点击的情况 """
-        try:
-            ele = self.driver.find_element(*loc)
-            ActionChains(self.driver).move_to_element(ele).click().perform()
-        except ElementClickInterceptedException:
-            self.event.handling_events()
-            ele = self.driver.find_element(*loc)
-            ActionChains(self.driver).move_to_element(ele).click().perform()
-
     def clear_worker(self):
         """ 将除伐木者的其他劳动者归零 """
         worker_ele_list = self.driver.find_elements(By.CLASS_NAME, "workerRow")
         del worker_ele_list[0]  # 排除第一个元素 伐木者
-        for worker_ele in worker_ele_list:
+        for worker_ele in worker_ele_list[::-1]:  # 倒叙清除，防止出现小提示导致无法点击
             worker_id = worker_ele.get_attribute("id")  # 获取劳动者的id
             worker_count = self.get_ele_val(worker_id)  # 获取劳动者个数
             while worker_count > 0:
-                self.move_click((By.CSS_SELECTOR, "#{0} > .row_val > .dnManyBtn".format(worker_id)))  # 点击少10个
+                self.click((By.CSS_SELECTOR, "#{0} > .row_val > .dnManyBtn".format(worker_id)))  # 点击少10个
                 worker_count = self.get_ele_val(worker_id)
 
     def add_worker_count(self, worker_id, count):
