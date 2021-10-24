@@ -17,6 +17,13 @@ class RoomEle:
     COMPASS = (By.ID, "build_compass")  # 罗盘
     TANNERY = (By.ID, "build_tannery")  # 制革屋
     SMOKE_HOUSE = (By.ID, "build_smokehouse")  # 熏肉房
+    WORKSHOP = (By.ID, "build_workshop")  # 工坊
+    TORCH = (By.ID, "build_torch")  # 火把
+    WATER_SKIN = (By.ID, "build_waterskin")  # 水壶
+    CASK = (By.ID, "build_cask")  # 水桶
+    BONE_SPEAR = (By.ID, "build_bone spear")  # 骨枪
+    RUCKSACK = (By.ID, "build_rucksack")  # 双肩包
+    L_ARMOUR = (By.ID, "build_l armour")  # 皮甲
 
 
 class Room(BasePage):
@@ -36,15 +43,19 @@ class Room(BasePage):
     def build_lodge(self):
         self.click(RoomEle.LODGE)
 
-    def get_stores_val(self, resource_id):
-        """ 获取右侧库存id对应材料的材料数
-        :param resource_id: 材料对应的id值
-        :return: 材料数的整数类型
-        """
-        return int(self.driver.find_element_by_css_selector(resource_id + " > .row_val").get_attribute("textContent"))
-
     def build_trap(self):
         self.click(RoomEle.TRAP)
 
     def build_hut(self):
         self.click(RoomEle.HUT)
+
+    def build_workshop(self):
+        self.click(RoomEle.WORKSHOP)
+
+    def build_torch(self, count=1):
+        for _ in range(count):
+            self.click(RoomEle.TORCH)
+
+    def build_bone_spear(self, count=1):
+        for _ in range(count):
+            self.move_click(RoomEle.BONE_SPEAR)
